@@ -1,0 +1,83 @@
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+
+
+} 
+/* Estilo del header*/
+.header { 
+    font-family: "Charm", cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 50px 1px;
+    background-color: #EDE5D8 ; 
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 10px;
+}
+nav a:hover {
+    color: rgb(170, 83, 83); /* Cambia el color al pasar el mouse */
+  }
+img{
+    width: 20%;    
+}
+
+/*Estilos generales */
+body{
+    background-color: #EDE5D8;
+    text-align: center;
+}
+
+/*Estilos del h1 */
+h1 {font-style: italic;
+font-size: large;}
+
+/*Estilos de lista de Arma tu proyecto */
+ul{
+    font-size: 30px;
+    font-weight: bolder
+}
+.li{
+    color: rgb(170, 83, 83);
+    text-align: center;
+    list-style-type: none;
+    font-size: 25px;    
+}
+
+/* Estilo de segundo titulo*/
+ #segundo-titulo {
+    font-size: large;
+    color: rgb(170, 83, 83);
+    
+}
+
+/* Estilo de footer */
+
+footer{
+    font-style: italic;
+    font-size: large;
+    font-weight: 500;
+}
+
+/* Estilos Mis trabajos */
+
+section{
+    font-family: "Charm", cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(170, 83, 83);
+}
+
+#article {
+    font-size: 20px;
+    color: rgb(20, 18, 16);
+    font-weight: lighter;
+}
+
+
+
