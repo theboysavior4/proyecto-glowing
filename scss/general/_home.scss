@@ -1,0 +1,186 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* Estilos para header */
+
+.bg-custom {
+    background-color: $color-principal !important; 
+    border-bottom: 1px solid black;
+  }
+  
+  .navbar-brand img {
+    width: 220px;
+    margin-right: 15px;
+  }
+
+/* Estilo de los enlaces del menú */
+    .navbar-nav .nav-link {
+        font-family: "Charm", cursive;
+        font-weight: bold;
+        color: #000;
+        font-size: 18px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px $color-secundario;
+        transition: all 0.3s ease-in-out;
+      }
+      .navbar-nav .nav-link:hover {
+        background-color: $color-secundario;
+        color: #fff;
+      }
+      
+/* Botón hamburguesa */
+      .navbar-toggler {
+        border: none;
+      }
+      .navbar-toggler-icon {
+        background-color: $color-secundario;
+        border-radius: 3px;
+      }
+
+    /* Estilos de main */
+    main {
+        .div-imagenes {
+        @include grid (grid, repeat(3, 1fr), 1fr 1fr);
+        gap: 1rem;
+        padding: 1rem;     
+                      }                      
+        div.imagenes img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            }
+
+        div.imagenes div.img-tres {
+            grid-column: 3;
+            grid-row: span 2; 
+            }
+    
+    }
+
+    /* Estilos de Mis Trabajos  */
+
+section {
+    font-family: italic;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#article {
+    font-size: 20px;
+    color: #141210;
+    font-weight: lighter;
+    padding: 2rem 5rem 1rem 5rem;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    margin: 5rem;
+}
+figure img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+/*Estilos de contacto */
+form {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+input, select, textarea {
+    width: 100%; 
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+textarea {
+    grid-column: span 2; 
+    height: 150px; 
+    resize: vertical;
+}
+
+input[type="submit"] {
+    grid-column: span 2;
+    padding: 1rem;
+    background-color:$color-secundario;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b4343;
+}
+
+/*Estilos de body */
+
+body {
+    background-color: $color-secundario;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Estilos del h1 */
+h1 {
+    padding-top: 3rem;
+    font-style: italic;
+    font-size: x-large;
+    padding-bottom: 1rem;
+}
+
+/* Estilo de segundo titulo*/
+#segundo-titulo {
+    font-size: medium;
+    color: black;
+    font-family: italic;
+
+}
+
+/*Estilos de lista de Arma tu proyecto */
+ul {
+    font-size: 30px;
+    font-weight: bolder
+}
+
+.li {
+    color: $color-principal;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+/* Estilo de footer */
+
+footer {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: lighter;
+    background-color: $color-principal;
+    width: 100%;
+    padding: 10px;
+    margin-top: auto;
+    border-top: 1px solid black;
+}
+
+
+
+
+

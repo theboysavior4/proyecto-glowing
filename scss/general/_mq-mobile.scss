@@ -1,0 +1,53 @@
+/* Media queries para mobile */
+@media screen and (max-width: 768px) {
+
+    /* Ajustar el menú para móviles */
+    .navbar-nav .nav-link {
+        font-size: 16px; /* Reducir el tamaño de fuente */
+        padding: 10px; /* Añadir un poco de espacio alrededor */
+    }
+
+    /* Ajustar la imagen grid a una sola columna */
+    main div.imagenes {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: repeat(3, 1fr); /* Tres filas */
+    }
+
+    /* Ajustar los artículos y las secciones */
+    section {
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+    }
+
+    #article {
+        padding: 1rem 2rem; /* Ajustar el padding */
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Ajustar el formulario para mobile */
+    form {
+        grid-template-columns: 1fr; /* Una columna */
+        max-width: 100%; /* Usar el 100% del ancho disponible */
+    }
+
+    input[type="submit"] {
+        grid-column: 1; /* Mantener en una sola columna */
+    }
+
+    /* Ajustar las imagenes en el grid */
+    figure {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    figure img {
+        width: 100%; /* Asegurar que la imagen ocupe todo el espacio */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+    /* Estilo de footer */
+    footer {
+        font-size: medium;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,53 @@
+/* Media queries para tablets */
+@media screen and (max-width: 1024px) {
+
+    /* Ajustar el menú para tablets */
+    .navbar-nav .nav-link {
+        font-size: 18px; 
+        padding: 12px;
+    }
+
+    /* Ajustar la imagen grid a dos columnas */
+    main div.imagenes {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+
+    /* Ajustar los artículos y las secciones */
+    section {
+        font-size: 26px; 
+    }
+
+    #article {
+        padding: 2rem 3rem; 
+        font-size: 20px; 
+    }
+
+    /* Mantener el formulario en una sola columna */
+    form {
+        grid-template-columns: 1fr; 
+        max-width: 80%;
+    }
+
+    input[type="submit"] {
+        grid-column: 1;
+    }
+
+    /* Ajustar las imágenes en el grid */
+    figure {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Estilo del footer */
+    footer {
+        font-size: large;
+        padding: 10px;
+    }
+}

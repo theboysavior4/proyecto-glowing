@@ -1,250 +1,275 @@
+@charset "UTF-8";
 /* Reset*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos para header */
-
 .bg-custom {
-    background-color: #EDE5D8 !important; 
-    border-bottom: 1px solid black;
-  }
-  
-  .navbar-brand img {
-    width: 220px;
-    margin-right: 15px;
-  }
-  
-  /* Estilo de los enlaces del menú */
-  .navbar-nav .nav-link {
-    font-family: "Charm", cursive;
-    font-weight: bold;
-    color: #000;
-    font-size: 18px;
-    border-radius: 50px;
-    box-shadow: 5px 5px 20px #AA5353;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    background-color: #AA5353;
-    color: #fff;
-  }
-  
-  /* Botón hamburguesa */
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-color: #AA5353;
-    border-radius: 3px;
-  }   
+  background-color: #EDE5D8 !important;
+  border-bottom: 1px solid black;
+}
 
+.navbar-brand img {
+  width: 220px;
+  margin-right: 15px;
+}
+
+/* Estilo de los enlaces del menú */
+.navbar-nav .nav-link {
+  font-family: "Charm", cursive;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px #AA5353;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #AA5353;
+  color: #fff;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #AA5353;
+  border-radius: 3px;
+}
 
 /* Estilos de main */
-
-main div.imagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    
+main .div-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
-
 main div.imagenes img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 main div.imagenes div.img-tres {
-    grid-column: 3;
-    grid-row: span 2; 
+  grid-column: 3;
+  grid-row: span 2;
 }
 
 /* Estilos de Mis Trabajos  */
-
 section {
-    font-family: italic;
-    font-weight: bolder;
-    font-size: 30px;
+  font-family: italic;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 #article {
-    font-size: 20px;
-    color: #141210;
-    font-weight: lighter;
-    padding: 2rem 5rem 1rem 5rem;
+  font-size: 20px;
+  color: #141210;
+  font-weight: lighter;
+  padding: 2rem 5rem 1rem 5rem;
 }
 
 figure {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 1rem;
-    margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 5rem;
 }
 
 figure img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*Estilos de contacto */
 form {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 1.5rem; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 1rem; 
-    box-sizing: border-box; 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 input, select, textarea {
-    width: 100%; 
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-sizing: border-box; 
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 textarea {
-    grid-column: span 2; 
-    height: 150px; 
-    resize: vertical;
+  grid-column: span 2;
+  height: 150px;
+  resize: vertical;
 }
 
-input[type="submit"] {
-    grid-column: span 2;
-    padding: 1rem;
-    background-color: #AA5353;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+input[type=submit] {
+  grid-column: span 2;
+  padding: 1rem;
+  background-color: #AA5353;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #8b4343;
+input[type=submit]:hover {
+  background-color: #8b4343;
 }
-
-
 
 /*Estilos de body */
-
 body {
-    background-color: #AA5353;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: #AA5353;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*Estilos del h1 */
 h1 {
-    padding-top: 3rem;
-    font-style: italic;
-    font-size: x-large;
-    padding-bottom: 1rem;
+  padding-top: 3rem;
+  font-style: italic;
+  font-size: x-large;
+  padding-bottom: 1rem;
 }
 
 /* Estilo de segundo titulo*/
 #segundo-titulo {
-    font-size: medium;
-    color: black;
-    font-family: italic;
-
+  font-size: medium;
+  color: black;
+  font-family: italic;
 }
 
 /*Estilos de lista de Arma tu proyecto */
 ul {
-    font-size: 30px;
-    font-weight: bolder
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .li {
-    color: #EDE5D8;
-    text-align: center;
-    list-style-type: none;
-    font-size: 20px;
+  color: #EDE5D8;
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
 }
-
 
 /* Estilo de footer */
-
 footer {
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: lighter;
-    background-color: #EDE5D8;
-    width: 100%;
-    padding: 10px;
-    margin-top: auto;
-    border-top: 1px solid black;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: lighter;
+  background-color: #EDE5D8;
+  width: 100%;
+  padding: 10px;
+  margin-top: auto;
+  border-top: 1px solid black;
 }
 
+/* Media queries para tablets */
+@media screen and (max-width: 1024px) {
+  /* Ajustar el menú para tablets */
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 12px;
+  }
+  /* Ajustar la imagen grid a dos columnas */
+  main div.imagenes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  /* Ajustar los artículos y las secciones */
+  section {
+    font-size: 26px;
+  }
+  #article {
+    padding: 2rem 3rem;
+    font-size: 20px;
+  }
+  /* Mantener el formulario en una sola columna */
+  form {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
+  input[type=submit] {
+    grid-column: 1;
+  }
+  /* Ajustar las imágenes en el grid */
+  figure {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  /* Estilo del footer */
+  footer {
+    font-size: large;
+    padding: 10px;
+  }
+}
 /* Media queries para mobile */
 @media screen and (max-width: 768px) {
-
-    /* Ajustar el menú para móviles */
-    .navbar-nav .nav-link {
-        font-size: 16px; /* Reducir el tamaño de fuente */
-        padding: 10px; /* Añadir un poco de espacio alrededor */
-    }
-
-    /* Ajustar la imagen grid a una sola columna */
-    main div.imagenes {
-        grid-template-columns: 1fr; /* Una sola columna */
-        grid-template-rows: repeat(3, 1fr); /* Tres filas */
-    }
-
-    /* Ajustar los artículos y las secciones */
-    section {
-        font-size: 24px; /* Reducir el tamaño de la fuente */
-    }
-
-    #article {
-        padding: 1rem 2rem; /* Ajustar el padding */
-        font-size: 18px; /* Reducir el tamaño de la fuente */
-    }
-
-    /* Ajustar el formulario para móvil */
-    form {
-        grid-template-columns: 1fr; /* Una columna */
-        max-width: 100%; /* Usar el 100% del ancho disponible */
-    }
-
-    input[type="submit"] {
-        grid-column: 1; /* Mantener en una sola columna */
-    }
-
-    /* Ajustar las imágenes en el grid */
-    figure {
-        grid-template-columns: 1fr; /* Una sola columna */
-        gap: 1rem;
-        margin: 1rem;
-    }
-
-    figure img {
-        width: 100%; /* Asegurar que la imagen ocupe todo el espacio */
-        height: auto; /* Ajustar la altura automáticamente */
-    }
-
-    /* Estilo de footer */
-    footer {
-        font-size: medium;
-        padding: 5px;
-    }
+  /* Ajustar el menú para móviles */
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Reducir el tamaño de fuente */
+    padding: 10px; /* Añadir un poco de espacio alrededor */
+  }
+  /* Ajustar la imagen grid a una sola columna */
+  main div.imagenes {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas */
+  }
+  /* Ajustar los artículos y las secciones */
+  section {
+    font-size: 24px; /* Reducir el tamaño de la fuente */
+  }
+  #article {
+    padding: 1rem 2rem; /* Ajustar el padding */
+    font-size: 18px; /* Reducir el tamaño de la fuente */
+  }
+  /* Ajustar el formulario para mobile */
+  form {
+    grid-template-columns: 1fr; /* Una columna */
+    max-width: 100%; /* Usar el 100% del ancho disponible */
+  }
+  input[type=submit] {
+    grid-column: 1; /* Mantener en una sola columna */
+  }
+  /* Ajustar las imagenes en el grid */
+  figure {
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 1rem;
+    margin: 1rem;
+  }
+  figure img {
+    width: 100%; /* Asegurar que la imagen ocupe todo el espacio */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+  /* Estilo de footer */
+  footer {
+    font-size: medium;
+    padding: 5px;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */
